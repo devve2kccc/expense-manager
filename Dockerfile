@@ -22,4 +22,4 @@ COPY --from=prerelease /src .
 ENV NODE_ENV=production
 USER bun
 EXPOSE 3000/tcp
-ENTRYPOINT [ "bun", "run", "start" ]
+ENTRYPOINT [ "bun", "run", "dev" ]
